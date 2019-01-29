@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import re
 import os
@@ -155,9 +155,9 @@ def Download(url,lang):
     subtitle_list = []
     exts = [".srt", ".sub", ".txt", ".smi", ".ssa", ".ass" ]
     try:
-        data   = session_get(url)
-        soup   = BeautifulSoup(data, "html.parser")
-        id     = soup.find("button", class_="btn btn-danger btn-sm").get("sid").encode('utf-8')
+        data = session_get(url)
+        soup = BeautifulSoup(data, "html.parser")
+        id = soup.find("button", class_="btn btn-danger btn-sm").get("sid").encode('utf-8')
 		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         url = "http://subhd.com/ajax/down_ajax"
         data = session_get(url, id=id, referer=referer, dtoken = dtoken)
