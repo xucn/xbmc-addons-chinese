@@ -20,7 +20,7 @@
     <forum>http://forum.kodi.tv/showthread.php?tid=64250</forum>
     <website></website>
     <email></email>
-    <source>https://github.com/taxigps/xbmc-addons-chinese/tree/master/metadata.doubantv.com</source>
+    <source>https://github.com/xucn/xbmc-addons-chinese/tree/master/metadata.doubantv.com</source>
   </extension>
 </addon>
 
@@ -46,7 +46,7 @@
         <forum>http://forum.kodi.tv/showthread.php?tid=64250</forum>
         <website></website>
         <email></email>
-        <source>https://github.com/taxigps/xbmc-addons-chinese/tree/master/plugin.audio.1ting</source>
+        <source>https://github.com/xucn/xbmc-addons-chinese/tree/master/plugin.audio.1ting</source>
     </extension>
 </addon>
 
@@ -104,7 +104,7 @@
         <forum>http://forum.kodi.tv/showthread.php?tid=64250</forum>
         <website></website>
         <email></email>
-        <source>https://github.com/taxigps/xbmc-addons-chinese/tree/master/plugin.audio.doubanfm</source>
+        <source>https://github.com/xucn/xbmc-addons-chinese/tree/master/plugin.audio.doubanfm</source>
     </extension>
 </addon>
 
@@ -364,7 +364,7 @@
 <addon id="plugin.video.funshion"
     name="风行视频(Funshion)"
     version="1.1.1"
-    provider-name="taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0"/>
     </requires>
@@ -547,7 +547,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 <addon id="plugin.video.qiyi"
     name="奇艺视频(QIYI)"
     version="2.2.8"
-    provider-name="taxigps">
+    provider-name="xucn">
     <requires>
       <import addon="script.module.simplejson" version="3.3.0"/>
     </requires>
@@ -589,7 +589,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 <addon id="plugin.video.sohuvideo"
     name="搜狐视频(SoHu)"
     version="2.4.10"
-    provider-name="Taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.keyboard.chinese" version="1.0.0"/>
@@ -632,7 +632,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 <addon id="plugin.video.youku"
     name="优酷视频(YouKu)"
     version="2.2.10"
-    provider-name="Taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0"/>
     </requires>
@@ -683,25 +683,25 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
     </extension>
 </addon>
 
-<addon id="repository.xbmc-addons-chinese" name="Chinese Add-ons" version="1.2.1" provider-name="Taxigps">
+<addon id="repository.xbmc-addons-chinese" name="Chinese Add-ons" version="1.2.1" provider-name="xucn">
     <extension point="xbmc.addon.repository" name="Chinese Add-ons">
-        <info compressed="true">https://github.com/taxigps/xbmc-addons-chinese/raw/master/addons.xml</info>
-        <checksum>https://github.com/taxigps/xbmc-addons-chinese/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/taxigps/xbmc-addons-chinese/raw/master/repo</datadir>
+        <info compressed="true">https://github.com/xucn/xbmc-addons-chinese/raw/master/addons.xml</info>
+        <checksum>https://github.com/xucn/xbmc-addons-chinese/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/xucn/xbmc-addons-chinese/raw/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Chinese Add-ons Repository</summary>
         <summary lang="zh">面向中文用户的插件库</summary>
         <description>Download and install add-ons from xbmc-addons-chinese addon repository.[CR][CR]By using this Repository you will be able to take advantage of our cutting edge features developed for chinese people.</description>
         <description lang="zh">从xbmc-addons-chinese库下载安装插件。[CR][CR]通过使用这个程序库，你将能够分享我们为中文用户开发的插件。</description>
-        <disclaimer>Taxigps did not make all the add-ons on this repository and is not responsible for their content</disclaimer>
-        <disclaimer lang="zh">本库中扩展功能模块不完全由Taxigps开发，对他人提交的内容不承担责任</disclaimer>
+        <disclaimer>xucn did not make all the add-ons on this repository and is not responsible for their content</disclaimer>
+        <disclaimer lang="zh">本库中扩展功能模块不完全由xucn开发，对他人提交的内容不承担责任</disclaimer>
         <platform>all</platform>
     </extension>
 </addon>
 
 <addon id="script.iptvtool"
-    name="IPTV Tool" version="1.0.2" provider-name="Taxigps">
+    name="IPTV Tool" version="1.0.2" provider-name="xucn">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.simplejson" version="2.0.10" />
@@ -724,14 +724,14 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 		<license>GNU GENERAL PUBLIC LICENSE, Version 2</license>
 		<forum></forum>
 		<website></website>
-		<source>https://github.com/taxigps/script.iptvtool</source>
+		<source>https://github.com/xucn/script.iptvtool</source>
 	</extension>
 </addon>
 
 <addon id="script.module.keyboard.chinese"
     name="Chinese keyboard"
     version="2.0.5"
-    provider-name="Taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.beautifulsoup4" version="4.3.2"/>
@@ -744,13 +744,13 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
         <description lang="zh">支持中文输入的虚拟键盘</description>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <forum>http://forum.kodi.tv/showthread.php?tid=98194</forum>
-        <source>https://github.com/taxigps/script.module.keyboard.chinese/</source>
+        <source>https://github.com/xucn/script.module.keyboard.chinese/</source>
         <platform>all</platform>
     </extension>
 </addon>
 
 <addon id="script.skinfont"
-    name="Skin Font" version="1.0.2" provider-name="taxigps">
+    name="Skin Font" version="1.0.2" provider-name="xucn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -782,21 +782,21 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
     <summary lang="zh">射手(伪)字幕</summary>
     <summary lang="zh_TW">射手(伪)字幕</summary>
     <description lang="en">Search and download subtitles from Shooter-fake (assrt.net)</description>
-    <description lang="zh">从射手网(伪)（assrt.net）下载字幕，修改自taxigps的射手网插件</description>
-    <description lang="zh_TW">從射手網(偽)（assrt.net）下載字幕，修改自taxigps的射手網插件</description>
+    <description lang="zh">从射手网(伪)（assrt.net）下载字幕，修改自xucn的射手网插件</description>
+    <description lang="zh_TW">從射手網(偽)（assrt.net）下載字幕，修改自xucn的射手網插件</description>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=199644</forum>
     <website></website>
     <email></email>
-    <source>https://github.com/taxigps/xbmc-addons-chinese/tree/master/service.subtitles.makedie</source>
+    <source>https://github.com/xucn/xbmc-addons-chinese/tree/master/service.subtitles.makedie</source>
   </extension>
 </addon>
 
 <addon id="service.subtitles.subhd"
        name="Sub HD"
        version="1.0.15"
-       provider-name="taxigps">
+       provider-name="xucn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.2"/>
@@ -816,7 +816,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 <addon id="service.subtitles.zimuku"
        name="zimuku"
        version="1.0.9"
-       provider-name="taxigps">
+       provider-name="xucn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.2"/>
@@ -834,7 +834,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 <addon id="service.subtitles.zimushe"
        name="ZMS"
        version="1.0.3"
-       provider-name="taxigps">
+       provider-name="xucn">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.2"/>

@@ -1,12 +1,12 @@
 ﻿########################################################################
 # 乐视网(LeTv) by cmeng
 ########################################################################
-# Version 1.6.1 2017-03-06 (taxigps)
+# Version 1.6.1 2017-03-06 (xucn)
 - Remove obsolete program 明星
 - Fixed can't get program list of 动漫
 - New icon
 
-# Version 1.6.0 2017-03-05 (taxigps)
+# Version 1.6.0 2017-03-05 (xucn)
 - Add setting to select kodi internal keyboard
 - Add setting to select play m3u8 directly
 - Fixed can't get program list because site changed
@@ -94,7 +94,7 @@
 # - Include <requires/> in addon.xml to import ChineseKeyboard
 # - add exception when loading ChineseKeyboard
 
-# Version 1.3.6 2014-09-29 (taxigps)
+# Version 1.3.6 2014-09-29 (xucn)
 # - Fix import error of simplejson
 
 # Version 1.3.5 2014-03-18 (cmeng)

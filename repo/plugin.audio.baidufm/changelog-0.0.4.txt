@@ -1,4 +1,4 @@
-[B]0.0.4[/B] (2014/09/29 by taxigps)
+[B]0.0.4[/B] (2014/09/29 by xucn)
 - Fix import error of simplejson
 
 [B]0.0.3[/B] (2013/05/18 by zhangyuanwei)

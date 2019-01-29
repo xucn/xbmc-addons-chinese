@@ -2,7 +2,7 @@
 <addon id="plugin.video.youku"
     name="优酷视频(YouKu)"
     version="2.2.10"
-    provider-name="Taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0"/>
     </requires>

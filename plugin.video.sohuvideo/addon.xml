@@ -2,7 +2,7 @@
 <addon id="plugin.video.sohuvideo"
     name="搜狐视频(SoHu)"
     version="2.4.10"
-    provider-name="Taxigps">
+    provider-name="xucn">
     <requires>
         <import addon="script.module.simplejson" version="3.3.0"/>
         <import addon="script.module.keyboard.chinese" version="1.0.0"/>

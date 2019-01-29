@@ -103,6 +103,6 @@ If for reasons that you need to manually install a specific plugin, you can down
 
 [1]: http://bbs.htpc1.com/forum-225-1.html
 [2]: https://forum.kodi.tv/showthread.php?tid=64250
-[3]: https://github.com/taxigps/xbmc-addons-chinese/raw/master/repo/repository.xbmc-addons-chinese/repository.xbmc-addons-chinese-1.2.1.zip
+[3]: https://github.com/xucn/xbmc-addons-chinese/raw/master/repo/repository.xbmc-addons-chinese/repository.xbmc-addons-chinese-1.2.1.zip
 
 

@@ -8,11 +8,11 @@
 # - 音悦台 - 全部悦单
 # - 音悦台 - 歌手
 
-# Version 1.7.7 2014-10-17 (taxigps)
+# Version 1.7.7 2014-10-17 (xucn)
 # Fix error for import ChineseKeyboard
 # Regular icon to 256x256
 
-# Version 1.7.6 2014-09-29 (taxigps)
+# Version 1.7.6 2014-09-29 (xucn)
 # Fix import error of simplejson
 
 # Version 1.7.5 2014-06-15 (cmeng)
@@ -120,7 +120,7 @@
 # - remove extra " in Artist name listing
 # - addLink: name cannot contain "/" e.g. 12/02/25
 
-# Version 1.4.0 2012-1-8 (Taxigps)
+# Version 1.4.0 2012-1-8 (xucn)
 # - changed for eden - not use os.getcwd()
 
 # Version 1.3.1 2011-12-22 (cmeng)

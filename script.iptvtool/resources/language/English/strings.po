@@ -1,7 +1,7 @@
 # {{subst:Name}} Media Center language file
 # Addon Name: IPTV Tool
 # Addon id: script.iptvtool
-# Addon Provider: Taxigps
+# Addon Provider: xucn
 msgid ""
 msgstr ""
 "Project-Id-Version: {{subst:Name}} Addons\n"

@@ -1,6 +1,6 @@
 ﻿
 1。安装kodi,http://kodi.tv/download/,选择你的服务器。
-2。把https://github.com/taxigps/xbmc-addons-chinese/raw/master/repo/repository.xbmc-addons-chinese/repository.xbmc-addons-chinese-1.2.0.zip 下载到你的服务器里，记得kodi能找到它。
+2。把https://github.com/xucn/xbmc-addons-chinese/raw/master/repo/repository.xbmc-addons-chinese/repository.xbmc-addons-chinese-1.2.0.zip 下载到你的服务器里，记得kodi能找到它。
 3。让Kodi显示中文。
    启动Kodi，Systems->Settings->Appearance.
    先在Skin里把fonts设成Arial Based。再在International一栏里把Character Set设成Chinese Simplified（GBK）。

@@ -103,14 +103,14 @@
 # - Include Episode Chapter & Section information in the video playlist
 # - Add Letv video player - under development
 
-# Version 2.0.5 2012-02-16 (taxigps)
+# Version 2.0.5 2012-02-16 (xucn)
 # - Work around for XBMC Eden Beta 3 [COLOR\] tag problem
 
 # Version 2.0.4 2012-02-11 (cmeng)
 # - Update PlayVideoSohu to take care of missing video/resolution 
 # - Take care for XBMC Eden Beta 3 [COLOR\] script problem
 
-# Version 2.0.1 2012-01-29 (taxigps)
+# Version 2.0.1 2012-01-29 (xucn)
 # - fixed error for COLOR_LIST index out of range
 
 # Version 2.0.0 2012-01-27 (cmeng)
@@ -121,7 +121,7 @@
 # Version 1.2.1 2012-01-14 (cmeng)
 # a. update to pps 2012 latest web layout structure
 
-# Version 1.2.0 2012-1-8 (Taxigps)
+# Version 1.2.0 2012-1-8 (xucn)
 # a. changed for eden - not use os.getcwd()
  
 # Version 1.1.1 2011-12-25 (cmeng)
@@ -130,7 +130,7 @@
 # c. correct error in page selection
 
 # Version 1.1.0 2011-11-26 (cmeng)
-# a. Change new UI Similar to taxigps format
+# a. Change new UI Similar to xucn format
 # b. Repair broken links
 # c. Highlight selected page title
 

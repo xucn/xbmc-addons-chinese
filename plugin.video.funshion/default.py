@@ -8,7 +8,7 @@ import simplejson
 ########################################################################
 # 风行视频(Funshion)"
 ########################################################################
-# v1.1.1 2015.12.04 (taxigps)
+# v1.1.1 2015.12.04 (xucn)
 # - Update video list fetching for site change
 # - Add requires of simplejson
 

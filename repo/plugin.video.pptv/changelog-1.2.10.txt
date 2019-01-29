@@ -15,14 +15,14 @@
 # Fix can't list video bug, fix video list page bug
 # Fix can't get video URL bug
 
-# Version 1.2.7 2014-11-06 (taxigps)
+# Version 1.2.7 2014-11-06 (xucn)
 # Fix live channels
 
 # Version 1.2.6 2014-09-28 (Uranus Zhou - nocwat at gmail dot com)
 # Add PPTV new key to query video URL
 # Fix iPad m3u8 video / live video / sports live video doesn't work bug
 
-# Version 1.2.5 2014-07-24 (taxigps)
+# Version 1.2.5 2014-07-24 (xucn)
 # - Fix m3u8 live video play
 
 # Version 1.2.4 2014-01-05 (Uranus Zhou - nocwat at gmail dot com)

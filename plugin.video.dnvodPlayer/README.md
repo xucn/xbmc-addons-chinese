@@ -33,7 +33,7 @@ Build in module in version 16.1  ~~Xbmc requests module: https://github.com/been
 
 
 如需中文输入，请看下文  ~~Chinese keyboard模块
-Chinese keyboard module: https://github.com/taxigps/xbmc-addons-chinese/tree/master/script.module.keyboard.chinese~~
+Chinese keyboard module: https://github.com/xucn/xbmc-addons-chinese/tree/master/script.module.keyboard.chinese~~
 
 ## Install plugin 安装插件
 
@@ -81,4 +81,4 @@ Some VIP HD Video can be played by this add on, but not all. If it can not be pl
 部分视频可以直接查看VIP高清视频，如无法播放，则没有VIP高清视频或视频地址解析不成功，请选择普通画质。
 
 # Recommand Repository 推荐的插件库
-中文插件库 xbmc-addons-chinese: https://github.com/taxigps/xbmc-addons-chinese
+中文插件库 xbmc-addons-chinese: https://github.com/xucn/xbmc-addons-chinese

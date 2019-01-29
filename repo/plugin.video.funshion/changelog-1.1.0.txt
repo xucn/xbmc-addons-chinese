@@ -8,7 +8,7 @@
 # - Change algorithm for auto filter extraction
 # - Update video list extract per new site site
 
-# v1.0.12 2014.09.29 (taxigps)
+# v1.0.12 2014.09.29 (xucn)
 # - Fix import error of simplejson
 
 # v1.0.11 2014.06.15 (cmeng)
@@ -52,5 +52,5 @@
 v1.0.1 2013.12.24 (cmeng)
 - Temporary fix for video playback
 
-V1.0.0 2013.05.19 (taxigps)
+V1.0.0 2013.05.19 (xucn)
 - original release

@@ -2,7 +2,7 @@
 <addon id="plugin.video.qiyi"
     name="奇艺视频(QIYI)"
     version="2.2.8"
-    provider-name="taxigps">
+    provider-name="xucn">
     <requires>
       <import addon="script.module.simplejson" version="3.3.0"/>
     </requires>
