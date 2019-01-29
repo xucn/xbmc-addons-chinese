@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 import re
 import os
@@ -28,7 +28,7 @@ sys.path.append (__resource__)
 
 SUBHD_API  = 'http://subhd.com/search/%s'
 SUBHD_BASE = 'http://subhd.com'
-UserAgent  = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
+UserAgent  = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)'
 
 def log(module, msg):
     xbmc.log((u"%s::%s - %s" % (__scriptname__,module,msg,)).encode('utf-8'),level=xbmc.LOGDEBUG )
@@ -40,23 +40,21 @@ def session_get(url, id='', referer='', dtoken=''):
     if id:
         HEADERS={'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
             'Host': 'subhd.com',
-			'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',
             'Origin': 'http://subhd.com',
-            'User-Agent': UserAgent}
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
         s.headers.update({'Referer': referer})
-        r = s.post(url, data={'sub_id': id, 'dtoken': dtoken})
+        r = s.post(url, data={'sub_id': id, 'dtoken':dtoken})
         return r.content
     else:
         HEADERS={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate, sdch',
-            'Accept-Language': 'zh-CN,zh;q=0.9',
-            'User-Agent': UserAgent,
-			'Referer':'http://subhd.com/'}
+            'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(url)
@@ -158,7 +156,7 @@ def Download(url,lang):
         data = session_get(url)
         soup = BeautifulSoup(data, "html.parser")
         id = soup.find("button", class_="btn btn-danger btn-sm").get("sid").encode('utf-8')
-		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')		
+		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         url = "http://subhd.com/ajax/down_ajax"
         data = session_get(url, id=id, referer=referer, dtoken=dtoken)
         json_response = simplejson.loads(data)
