@@ -48,6 +48,8 @@ def session_get(url, id='', referer='', dtoken=''):
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
+        soup = BeautifulSoup(r, "html.parser")
+		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         s.headers.update({'Referer': referer})
         r = s.post(url, data={'sub_id': id, 'dtoken': dtoken})
         return r.content
