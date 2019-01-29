@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import re
 import os
@@ -28,7 +28,7 @@ sys.path.append (__resource__)
 
 SUBHD_API  = 'http://subhd.com/search/%s'
 SUBHD_BASE = 'http://subhd.com'
-UserAgent  = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)'
+UserAgent  = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 
 def log(module, msg):
     xbmc.log((u"%s::%s - %s" % (__scriptname__,module,msg,)).encode('utf-8'),level=xbmc.LOGDEBUG )
@@ -43,7 +43,7 @@ def session_get(url, id='', referer=''):
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
             'Host': 'subhd.com',
             'Origin': 'http://subhd.com',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
+            'User-Agent': UserAgent}
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
@@ -54,7 +54,8 @@ def session_get(url, id='', referer=''):
         HEADERS={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate, sdch',
             'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0'}
+            'User-Agent': UserAgent,
+			'Referer':'http://subhd.com/'}
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(url)
