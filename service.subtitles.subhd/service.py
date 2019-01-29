@@ -36,24 +36,25 @@ def log(module, msg):
 def normalizeString(str):
     return str
 
-def session_get(url, id='', referer=''):
+def session_get(url, id='', referer='', dtoken=''):
     if id:
         HEADERS={'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
             'Host': 'subhd.com',
+			'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',
             'Origin': 'http://subhd.com',
             'User-Agent': UserAgent}
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
         s.headers.update({'Referer': referer})
-        r = s.post(url, data={'sub_id': id})
+        r = s.post(url, data={'sub_id': id, 'dtoken': dtoken})
         return r.content
     else:
         HEADERS={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate, sdch',
-            'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
             'User-Agent': UserAgent,
 			'Referer':'http://subhd.com/'}
         s = requests.Session()
@@ -157,8 +158,9 @@ def Download(url,lang):
         data = session_get(url)
         soup = BeautifulSoup(data, "html.parser")
         id = soup.find("button", class_="btn btn-danger btn-sm").get("sid").encode('utf-8')
+		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         url = "http://subhd.com/ajax/down_ajax"
-        data = session_get(url, id=id, referer=referer)
+        data = session_get(url, id=id, referer=referer, dtoken = dtoken)
         json_response = simplejson.loads(data)
         if json_response['success']:
             url = json_response['url'].replace(r'\/','/').decode("unicode-escape").encode('utf-8')
