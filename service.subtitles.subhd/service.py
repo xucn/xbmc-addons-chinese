@@ -36,7 +36,7 @@ def log(module, msg):
 def normalizeString(str):
     return str
 
-def session_get(url, id='', referer='', dtoken=''):
+def session_get(url, id='', referer=''):
     if id:
         HEADERS={'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Encoding': 'gzip, deflate',
@@ -47,6 +47,8 @@ def session_get(url, id='', referer='', dtoken=''):
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
+        soup = BeautifulSoup(r.text, "html.parser")
+        dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         s.headers.update({'Referer': referer})
         r = s.post(url, data={'sub_id': id, 'dtoken':dtoken})
         return r.content
@@ -156,9 +158,8 @@ def Download(url,lang):
         data = session_get(url)
         soup = BeautifulSoup(data, "html.parser")
         id = soup.find("button", class_="btn btn-danger btn-sm").get("sid").encode('utf-8')
-        dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         url = "http://subhd.com/ajax/down_ajax"
-        data = session_get(url, id=id, referer=referer, dtoken=dtoken)
+        data = session_get(url, id=id, referer=referer)
         json_response = simplejson.loads(data)
         if json_response['success']:
             url = json_response['url'].replace(r'\/','/').decode("unicode-escape").encode('utf-8')
