@@ -685,9 +685,9 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
 
 <addon id="repository.xbmc-addons-chinese" name="Chinese Add-ons" version="1.2.2" provider-name="xucn">
     <extension point="xbmc.addon.repository" name="Chinese Add-ons">
-        <info compressed="true">https://raw.githubusercontent.com/xucn/xbmc-addons-chinese/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/xucn/xbmc-addons-chinese/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/xucn/xbmc-addons-chinese/tree/master/repo</datadir>
+        <info compressed="true">https://github.com/xucn/xbmc-addons-chinese/raw/master/addons.xml</info>
+        <checksum>https://github.com/xucn/xbmc-addons-chinese/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/xucn/xbmc-addons-chinese/raw/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Chinese Add-ons Repository</summary>
