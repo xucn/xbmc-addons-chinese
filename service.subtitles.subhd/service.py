@@ -47,8 +47,10 @@ def session_get(url, id='', referer=''):
         s = requests.Session()
         s.headers.update(HEADERS)
         r = s.get(referer)
+        soup = BeautifulSoup(r.text, "html.parser")
+		dtoken = soup.find("button", class_="btn btn-danger btn-sm").get("dtoken").encode('utf-8')
         s.headers.update({'Referer': referer})
-        r = s.post(url, data={'sub_id': id})
+        r = s.post(url, data={'sub_id': id, 'dtoken':dtoken})
         return r.content
     else:
         HEADERS={'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
