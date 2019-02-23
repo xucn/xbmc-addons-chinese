@@ -798,6 +798,7 @@ For Non-PRC OS environment (Windows7|WindowsXP):[CR]"Control Panel"|"Region and 
        version="1.0.17"
        provider-name="xucn">
   <requires>
+    <import addon="vfs.rar" version="2.0.5"/>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.2"/>
     <import addon="script.module.requests" version="2.4.3"/>

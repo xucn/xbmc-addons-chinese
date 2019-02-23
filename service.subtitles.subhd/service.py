@@ -11,6 +11,7 @@ import xbmcgui,xbmcplugin
 from bs4 import BeautifulSoup
 import requests
 import simplejson
+from urllib import quote_plus as url_quote
 
 __addon__ = xbmcaddon.Addon()
 __author__     = __addon__.getAddonInfo('author')
@@ -186,8 +187,18 @@ def Download(url,lang):
         subFile.write(data)
     subFile.close()
     xbmc.sleep(500)
-    if data[:4] == 'Rar!' or data[:2] == 'PK':
+    log(sys._getframe().f_code.co_name, "Download file %s, _temp_ %s" % (zip, __temp__))
+    if data[:2] == 'PK':
         xbmc.executebuiltin(('XBMC.Extract("%s","%s")' % (zip,__temp__,)).encode('utf-8'), True)
+    if data[:4] == 'Rar!':
+        src = 'rar://%s' % url_quote(zip)
+        log(sys._getframe().f_code.co_name, "rar file %s" % (src))
+        #xbmc.executebuiltin(('XBMC.Extract("%s","%s")' % (src,__temp__,)).encode('utf-8'), True)            
+        (cdirs, cfiles) = xbmcvfs.listdir(src)
+        log(sys._getframe().f_code.co_name, "rar listdir ")
+        for cfile in cfiles:
+            fsrc = '%s%s' % (src, cfile)
+            xbmcvfs.copy(fsrc, __temp__ + '/' + cfile)
     path = __temp__
     dirs, files = xbmcvfs.listdir(path)
     if ('__MACOSX') in dirs:
